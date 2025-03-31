@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dozzer_chess by shanecore_systems™</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="branding-animation" id="brandingAnimation"></div>
+        <div class="loading-text">Loading Dozzer Chess...</div>
+    </div>
+
+    <div class="branding" id="branding">
+        <h1 class="game-title">Dozzer_chess</h1>
+        <div class="company-name">by <span id="companyName">shanecore_systems™</span></div>
+    </div>
+    
+    <div class="game-container" id="gameContainer">
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="local">2 Players</button>
+            <button class="mode-btn" data-mode="computer">vs Computer</button>
+            <button class="mode-btn" data-mode="online">Online (Coming Soon)</button>
+        </div>
+        
+        <div class="board-and-timer">
+            <div class="chessboard" id="chessboard"></div>
+            
+            <div class="timer-container">
+                <div class="timer white" id="white-timer">
+                    <div class="timer-label">WHITE</div>
+                    <div class="timer-display">10:00</div>
+                </div>
+                
+                <div class="controls">
+                    <button class="game-btn" id="start-btn">START</button>
+                    <button class="game-btn" id="reset-btn">RESET</button>
+                </div>
+                
+                <div class="timer" id="black-timer">
+                    <div class="timer-label">BLACK</div>
+                    <div class="timer-display">10:00</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-info" id="game-info">
+            Select game mode and press START
+        </div>
+    </div>
+    
+    <div class="copyright" id="copyright">
+        © 2023 shanecore_systems™. All rights reserved.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
